@@ -1,0 +1,90 @@
+/* Inicio da estilização - Padronização da estrutura do site */
+
+* { /* Especifica o comportamento do site em relação à largura e altura para o conteúdo não fugir das suas "caixas" */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f6fb; /* Cor de fundo do selector */
+    color:#17213a; /* Cor da fonte */
+
+    margin: 0; /* Remove a margem padrão do html */
+
+    font-family: Arial, Helvetica, sans-serif; /* Define o uso padrão das fontes dos SO. */
+    font-size: 18px; /* Define o tamanho padrão da fonte */
+    line-height: 1.6; /* Definir o tamanho de uma linha */
+}
+
+h1, h2, h3 {
+    line-height: 1.2; /* Define o tamanho de uma linha para os headers de texto */
+}
+
+a {
+    color: #174ea6; /* Define a cor da fonte para ancoras */
+    font-weight: 900; /* Define o peso da fonte para ancoras */
+}
+
+a:focus { /* Define as regras para quando o <a> estiver em foco */
+    outline: 4px solid #ffb000; /* Define uma outline para identificar o botão em foco de forma mais fácil */
+    outline-offset: 3px; /* Define uma largura maior do outline */
+}
+
+a:hover { /* Define uma regra para quando o mouse estiver sobre <a> */
+    color:#6a8dc4; /* Define a cor da fonte da ancora quando o mouse sobrevoa ela */
+}
+
+/* Regras para regiões da página */
+
+header, footer { /* Define regras para header E footer */
+    padding: 24px; /* Define a distância entre o conteúdo e as bordas */
+
+    background-color: #17213a; /* Define o plano de fundo padrão */
+    color:#ffffff; /* Define a cor padrão da fonte */
+}
+
+header a { /* Define uma regra para toda <a> que estiver dentro de <header> */
+    color: #ffffff; /* Define a cor padrão da fonte */
+}
+
+nav {
+    display: flex; /* Permite a organização dos componentes dentro do contêiner de forma flexivel e responsiva */
+    flex-wrap: wrap; /* Faz com que os componentes desçam para a próxima linha caso excedam a tela do usuário */
+    gap: 20px; /* Define o espaçamento entre os itens */
+}
+
+main {
+    width: min(900px, 90%); /* Define a largura mínima para telas grandes e pequenas */
+    margin: 32px auto; /* Define o limite/espaço disponível após a borda do componente */
+}
+
+footer { /* Guarda conteúdos do rodapé */
+    margin-top: 32px; /* Define o limite/espaço disponível após a borda para o topo */
+}
+
+/* Componentes Reutilizáveis */
+
+.cartao { /* Componente cartao */
+    margin: 20px 0; /* Define o limite/espaço disponível após a borda do componente */
+    padding: 24px; /* Define a distância entre o conteúdo e as bordas */
+
+    border: 2px solid #b8c5dc; /* Cria uma borda com 2px de largura, que segue em sua extensão de forma sólida e com cor definida */
+    border-radius: 12px; /* Define o raio dos cantos da borda */
+
+    background-color: #dcffd8; /* Define um plano de fundo padrão */
+    background-image: url(https://wallpapercave.com/wp/wp2586787.jpg); /* Define uma imagem como plano de fundo */
+    background-size: cover; /* Coloca a imagem para cobrir todo o espaço possível */
+    background-position: bottom; /* Coloca a imagem para iniciar a exibição do fundo caso seja possível */
+    color:#f3f6fb; /* Define a cor padrão da fonte */
+}
+
+.botao {  /* Componente botao */
+    display: inline-block;  /* Cria um bloco onde é possível definir altura e largura para o conteúdo */
+
+    padding: 10px 16px;  /* Define a distância entre o conteúdo e as bordas */
+
+    /* border: 2px solid #34c44a; */
+    border-radius: 8px;  /* Define o raio dos cantos da borda */
+    
+    background-color: #174;  /* Define um plano de fundo padrão */
+    color: #ffffff;  /* Define a cor padrão da fonte */
+}
