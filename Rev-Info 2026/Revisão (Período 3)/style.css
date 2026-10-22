@@ -40,16 +40,19 @@ header, footer { /* Define regras para header E footer */
 
     background-color: #17213a; /* Define o plano de fundo padrão */
     color:#ffffff; /* Define a cor padrão da fonte */
+    background: linear-gradient();/*sequencia e cores*/
 }
 
 header a { /* Define uma regra para toda <a> que estiver dentro de <header> */
     color: #ffffff; /* Define a cor padrão da fonte */
+    justify-content: /* espaço lateral*/
+    
 }
 
 nav {
     display: flex; /* Permite a organização dos componentes dentro do contêiner de forma flexivel e responsiva */
+    gap: 20px; /* Define o espaçamento entre os itens, igual margin. usado em uma caixa específica de comando */
     flex-wrap: wrap; /* Faz com que os componentes desçam para a próxima linha caso excedam a tela do usuário */
-    gap: 20px; /* Define o espaçamento entre os itens */
 }
 
 main {
